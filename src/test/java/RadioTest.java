@@ -7,6 +7,16 @@ class RadioTest {
 
     @Test
 
+    public void testCountStation () {
+
+        Radio radio = new Radio(20);
+        radio.setCurrentStation(16);
+
+        assertEquals(16, radio.getCurrentStation());
+    }
+
+    @Test
+
     public void testCurrentStation() {
 
         Radio radio = new Radio();
@@ -177,6 +187,8 @@ class RadioTest {
         assertEquals(expected, actual);
     }
 }
+
+
 
 
 
